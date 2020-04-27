@@ -1,5 +1,4 @@
 const { Subject } = require("rxjs")
-const eegPipes = require("@neurosity/pipes")
 
 console.log(Subject)
 
@@ -15,9 +14,12 @@ class Epoch {
 
     const stream = new Subject()
 
-    this.source.pipe(
-      eegPipes.epoch({ duration: 256, interval: FREQUENCY })
-    ).subscribe(a => {
+    this.source.subscribe(a => {
+      // TODO implement epoch
+      // I removed the previous epoch functionality because it
+      // had some issues.
+      // Better to write our own.
+      
       stream.next(a)
     })
 
