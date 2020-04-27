@@ -1,0 +1,12 @@
+{
+  "name": "js-sigpro-engine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:larskarbo/js-sigpro-engine.git",
+  "author": "Lars Karbo <mail@larskarbo.no>",
+  "license": "MIT",
+  "dependencies": {
+    "@neurosity/pipes": "^3.2.3",
+    "rxjs": "^6.5.5"
+  }
+}
